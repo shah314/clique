@@ -5,6 +5,8 @@ problem</a>. A clique of a graph is a set of vertices in which each pair in the
 set have an edge between them i.e. it is a complete subgraph. A clique of
 maximum size is called the maximum clique.</P>
 
+<div align="center"><img src="clique.jpg" alg="Maximum Clique"/></div>
+
 <P> Results on 
 some <A href="http://dimacs.rutgers.edu/Challenges/">DIMACS</A> instances are 
 show in the following table. The algorithm is allowed to run for a maximum duration of 30 seconds.&nbsp;</P>
