@@ -1,5 +1,7 @@
 <h1>Genetic Algorithm for the Maximum Clique Problem</h1>
 
+<i><h3>Shalin Shah</h3></i>
+
 <div align="center"><img src="clique.jpg" alg="Maximum Clique"/></div>
 
 <P>Implementation of a genetic algorithm for the maximum clique problem in C++. A clique of a graph is a set of vertices in which each pair in the set have an edge between them i.e. it is a complete subgraph. A clique of maximum size is called the maximum clique.</P>
