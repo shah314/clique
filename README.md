@@ -19,7 +19,7 @@ show in the following table. The algorithm is allowed to run for a maximum durat
 <b>san1000</b> and <b>brock </b>instances.</li>
 </ul>
 
-<TABLE border=1>
+<TABLE>
   <TR>
     <TD   >Instance</B></TD>
     <TD   >Vertices</B></TD>
