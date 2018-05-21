@@ -1,11 +1,14 @@
 <h1>Genetic Algorithm for the Maximum Clique Problem</h1>
 
+<div align="center"><img src="clique.jpg" alg="Maximum Clique"/></div>
+
 <P>Implementation of a genetic algorithm for the <a href="http://en.wikipedia.com/wiki/Clique_problem"> maximum clique
 problem</a> in C++. A clique of a graph is a set of vertices in which each pair in the
 set have an edge between them i.e. it is a complete subgraph. A clique of
 maximum size is called the maximum clique.</P>
 
-<div align="center"><img src="clique.jpg" alg="Maximum Clique"/></div>
+<br><b>Cited By:</b><ul><li>Choi, Jang-Ho, et al. "Distributed coordination of IoT-based services by using a graph coloring algorithm." Computer Software and Applications Conference (COMPSAC), 2013 IEEE 37th Annual. IEEE, 2013.</li>
+</ul>
 
 <P> Results on 
 some <A href="http://dimacs.rutgers.edu/Challenges/">DIMACS</A> instances are 
