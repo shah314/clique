@@ -1,7 +1,7 @@
 <h1>Genetic Algorithm for the Maximum Clique Problem</h1>
 
 <P>Implementation of a genetic algorithm for the <a href="http://en.wikipedia.com/wiki/Clique_problem"> maximum clique
-problem</a>. A clique of a graph is a set of vertices in which each pair in the
+problem</a> in C++. A clique of a graph is a set of vertices in which each pair in the
 set have an edge between them i.e. it is a complete subgraph. A clique of
 maximum size is called the maximum clique.</P>
 
