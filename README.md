@@ -4,7 +4,7 @@
 
 <div align="center"><img src="clique.jpg" alg="Maximum Clique"/></div>
 
-<P>Implementation of a genetic algorithm for the maximum clique problem in C++. A clique of a graph is a set of vertices in which each pair in the set have an edge between them i.e. it is a complete subgraph. A clique of maximum size is called the maximum clique.</P>
+<P>Implementation of a genetic algorithm for the maximum clique problem in C++. A clique of a graph is a set of vertices in which each pair in the set have an edge between them i.e. it is a complete subgraph. A clique of maximum size is called the maximum clique. The algorithm uses new types of crossovers to achieve good results on several public graph datasets.</P>
 
 <br><b>Cited By:</b><ul><li>Choi, Jang-Ho, et al. "Distributed coordination of IoT-based services by using a graph coloring algorithm." Computer Software and Applications Conference (COMPSAC), 2013 IEEE 37th Annual. IEEE, 2013.</li><li>Muklason, Ahmad. "Hyper-heuristics and fairness in examination timetabling problems." Philosophy (2017)</li>
 </ul>
