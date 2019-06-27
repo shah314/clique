@@ -5,8 +5,6 @@ Genetic Algorithm - Maximum Clique Problem
 Author: Shalin Shah
 Email: shah.shalin@gmail.com
 
-For an explanation of the code see http://shah.freeshell.org/clique/.
-
 ** Requirements **
 	The program requires a data.CLQ file in the current directory.
    Change the file name in processData() function.
