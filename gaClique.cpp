@@ -3,7 +3,9 @@ Genetic Algorithm - Maximum Clique Problem
 ------------------------------------------
 
 Author: Shalin Shah
-Email: shah.shalin@gmail.com
+Email: shalin@alumni.usc.edu
+
+For an explanation of the code see http://shah.freeshell.org/clique/.
 
 ** Requirements **
 	The program requires a data.CLQ file in the current directory.
@@ -187,8 +189,8 @@ class Clique
 	public:
    	vector<int> clique;
       vector<int> pa;
-      map<int, bool, less<int>> mapPA;
-      map<int, bool, less<int>> mapClique;
+      map<int, bool, less<int> > mapPA;
+      map<int, bool, less<int> > mapClique;
 
       Clique()
       {
@@ -200,7 +202,7 @@ class Clique
          pa.reserve(NUMBER_NODES);
          
   			clique.push_back(firstVertex);
-         mapClique.insert(map<int, bool, less<int>>::value_type(firstVertex, true));
+         mapClique.insert(map<int, bool, less<int> >::value_type(firstVertex, true));
 
          for(int i=0; i<NUMBER_NODES; i++)
          {
@@ -213,7 +215,7 @@ class Clique
                if(GRAPH->aMatrix[i][firstVertex] == 1)
                {
                 	pa.push_back(i);
-                  mapPA.insert(map<int, bool, less<int>>::value_type(i, true));
+                  mapPA.insert(map<int, bool, less<int> >::value_type(i, true));
                }
             }
          }
@@ -225,7 +227,7 @@ class Clique
          	return;
 
 			clique.push_back(vertex);
-         mapClique.insert(map<int, bool, less<int>>::value_type(vertex, true));
+         mapClique.insert(map<int, bool, less<int> >::value_type(vertex, true));
 
          eraseFromPA(vertex);
          vector<int> erasedNodes;
@@ -277,7 +279,7 @@ class Clique
                	if(!containsInPA(i))
                   {
                   	pa.push_back(i);
-                     mapPA.insert(map<int, bool, less<int>>::value_type(i, true));
+                     mapPA.insert(map<int, bool, less<int> >::value_type(i, true));
                   }
                }
             }
@@ -305,7 +307,7 @@ class Clique
 
       bool containsInPA(int vertex)
       {
-			map<int, bool, less<int>>::iterator it = mapPA.find(vertex);
+			map<int, bool, less<int> >::iterator it = mapPA.find(vertex);
          if(it == mapPA.end())
          {
          	return false;
@@ -315,7 +317,9 @@ class Clique
 
          if(p.second)
          	return true;
-      }
+
+      	return false;
+	}
 
       void eraseFromClique(int vertex)
       {
@@ -338,7 +342,7 @@ class Clique
 
       bool containsInClique(int vertex)
       {
-      	map<int, bool, less<int>>::iterator it = mapClique.find(vertex);
+      	map<int, bool, less<int> >::iterator it = mapClique.find(vertex);
          if(it == mapClique.end())
          {
          	return false;
@@ -348,7 +352,9 @@ class Clique
 
          if(p.second)
          	return true;
-		}
+	
+	return false;	
+	}
 
       vector<SortedListNode> computeSortedList()
       {
@@ -395,25 +401,25 @@ class Clique
          	cclique.push_back(clique.at(i));
          }
 
-         map<int, bool, less<int>> cMapPA;
-         map<int, bool, less<int>>::iterator it = mapPA.begin();
+         map<int, bool, less<int> > cMapPA;
+         map<int, bool, less<int> >::iterator it = mapPA.begin();
          while(it != mapPA.end())
          {
          	pair<int, bool> p = *it;
             int i = p.first;
             bool j = p.second;
-            cMapPA.insert(map<int, bool, less<int>>::value_type(i, j));
+            cMapPA.insert(map<int, bool, less<int> >::value_type(i, j));
             it++;
          }
 
-         map<int, bool, less<int>> cMapClique;
-         map<int, bool, less<int>>::iterator itt = mapClique.begin();
+         map<int, bool, less<int> > cMapClique;
+         map<int, bool, less<int> >::iterator itt = mapClique.begin();
          while(itt != mapClique.end())
          {
          	pair<int, bool> p = *itt;
             int i = p.first;
             bool j = p.second;
-            cMapClique.insert(map<int, bool, less<int>>::value_type(i, j));
+            cMapClique.insert(map<int, bool, less<int> >::value_type(i, j));
             itt++;
          }
 
@@ -492,9 +498,11 @@ void processData()
 	int i = 0;
 
    GRAPH = new Graph();
-   
+
    for(i=0; i<NUMBER_EDGES; i++)
    {
+   	//printf("\n%d",i);
+
    	fgets(line, 1000, file);
       if(line[0] != 'e' && line[0] != 'E')
       {
@@ -710,7 +718,7 @@ Clique intersectionCrossover(Clique &c1, Clique&c2)
 
    if(clique.pa.size() > 0)
    {
-    	vector<SortedListNode> &sortedList = clique.computeSortedList();
+    	vector<SortedListNode> sortedList = clique.computeSortedList();
       int cnt = 0;
       while(clique.pa.size() > 0)
       {
@@ -835,7 +843,7 @@ inline void mutate(Clique &clique)
    double rand = generateDoubleRandomNumber();
    if(rand < 0.5)
    {
-   	vector<SortedListNode> &sortedList = clique.computeSortedList();
+   	vector<SortedListNode> sortedList = clique.computeSortedList();
       int cnt = 0;
       while(clique.pa.size() > 0)
       {
@@ -888,7 +896,7 @@ int main (void)
       	cnt++;
          if(cnt > SHUFFLE_TOLERANCE)
          {
-         	vector<Clique> &pop = generateRandomPopulation();
+         	vector<Clique> pop = generateRandomPopulation();
             population.swap(pop);
             pop.erase(pop.begin(), pop.end());
             srand(time(NULL));
@@ -913,7 +921,7 @@ int main (void)
       
       localImprovement(gBest);
       newPopulation.push_back(gBest);
-      printf("\n%d:%d",n, gBest.clique.size());
+      printf("\n%d:%lu",n, gBest.clique.size());
       /*for(int i=0; i<POPULATION; i++)
       {
       	printf("%d ", population.at(i).clique.size());
@@ -922,8 +930,8 @@ int main (void)
       
       for(int i=0; i<POPULATION-1; i++)
       {
-         vector<Clique> &parents = randomSelection(population);
-         Clique & offspring = intersectionCrossover(parents.at(0), parents.at(1));
+         vector<Clique> parents = randomSelection(population);
+         Clique offspring = intersectionCrossover(parents.at(0), parents.at(1));
          localImprovement(offspring);
          if(offspring.clique.size() <= parents.at(0).clique.size() || offspring.clique.size() <= parents.at(1).clique.size())
          {
