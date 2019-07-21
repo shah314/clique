@@ -2,7 +2,7 @@
 
 <i><h3>Shalin Shah</h3></i>
 <a href="https://zenodo.org/badge/latestdoi/134309139"><img src="https://zenodo.org/badge/134309139.svg" alt="DOI"></a>
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-3770-1391" href="https://orcid.org/0000-0002-3770-1391" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-3770-1391</a></div><br>
+
 <div align="center"><img src="clique.jpg" alg="Maximum Clique"/></div>
 
 <P>Implementation of a genetic algorithm for the maximum clique problem in C++. A clique of a graph is a set of vertices in which each pair in the set have an edge between them i.e. it is a complete subgraph. A clique of maximum size is called the maximum clique. The algorithm uses new types of crossovers to achieve good results on several public graph datasets.</P>
@@ -15,8 +15,6 @@ show in the following table. The algorithm is allowed to run for a maximum durat
   <li>The worst performance is on the <b>san1000</b> and <b>brock </b>instances.</li>
   <li>Please remove all comments and other extraneous text from the graph text instance file.</li>
 </ul>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-3770-1391" href="https://orcid.org/0000-0002-3770-1391" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-3770-1391</a></div><br>
 
 <TABLE>
   <TR>
