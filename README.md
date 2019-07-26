@@ -9,7 +9,7 @@
 
 <i>(If you are looking for a simpler algorithm in Java, please see <a href="https://github.com/shah314/clique2">clique2</a>)</i>
 
-<i>(The intersection crossover was borrowed from a similar idea on <a href="http://www.dharwadker.org/clique/">this algorithm</a> by Ashay Dharwadker)</i>
+<i>(The intersection crossover was borrowed from a similar idea in <a href="http://www.dharwadker.org/clique/">this algorithm</a> by Ashay Dharwadker)</i>
 
 <P> Results on 
 some <A href="http://dimacs.rutgers.edu/Challenges/">DIMACS</A> instances are 
