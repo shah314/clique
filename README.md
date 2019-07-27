@@ -9,6 +9,8 @@
 
 <i>(If you are looking for a simpler algorithm in Java, please see <a href="https://github.com/shah314/clique2">clique2</a>)</i>
 
+<i>(The intersection crossover was borrowed from a slightly similar idea in <a href="http://www.dharwadker.org/clique/">this algorithm</a>)</i>
+
 <P> Results on 
 some <A href="http://dimacs.rutgers.edu/Challenges/">DIMACS</A> instances are 
 show in the following table. The algorithm is allowed to run for a maximum duration of 30 seconds.&nbsp;</P>
