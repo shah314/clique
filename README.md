@@ -7,6 +7,10 @@
 
 <P>Implementation of a genetic algorithm for the maximum clique problem in C++. A clique of a graph is a set of vertices in which each pair in the set have an edge between them i.e. it is a complete subgraph. A clique of maximum size is called the maximum clique. The algorithm uses new types of crossovers to achieve good results on several public graph datasets.</P>
 
+<pre>The code needs a data.CLQ file in the current directory. One is included. 
+Compile the code using g++ and then just run it. 
+You can change the file name in the processData() function.</pre>
+
 <i>(If you are looking for a simpler algorithm in Java, please see <a href="https://github.com/shah314/clique2">clique2</a>)</i>
 
 <i>(The intersection crossover was borrowed from a similar idea in <a href="http://www.dharwadker.org/clique/">this algorithm</a>)</i>
