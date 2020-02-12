@@ -16,7 +16,7 @@ You can change the file name in the processData() function.</pre>
 <i>(The intersection crossover was borrowed from a similar idea in <a href="http://www.dharwadker.org/clique/">this algorithm</a>)</i>
 
 <P> Results on 
-some <A href="http://dimacs.rutgers.edu/Challenges/">DIMACS</A> instances are 
+some <A href="http://iridia.ulb.ac.be/~fmascia/maximum_clique/DIMACS-benchmark">DIMACS</A> instances are 
 show in the following table. The algorithm is allowed to run for a maximum duration of 30 seconds.&nbsp;</P>
 <ul>
   <li> The best performance is on the <b>hamming</b>, <b>p_hat</b> and <b>c-fat </b>instances.</li>
