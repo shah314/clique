@@ -6,7 +6,15 @@
 <div align="center"><img src="clique.jpg" alg="Maximum Clique"/></div>
 
 <P>Implementation of a genetic algorithm for the maximum clique problem in C++. A clique of a graph is a set of vertices in which each pair in the set have an edge between them i.e. it is a complete subgraph. A clique of maximum size is called the maximum clique. The algorithm uses new types of crossovers to achieve good results on several public graph datasets.</P>
-
+<br>
+<b>Cite this code:</b>
+<pre>
+@misc{shah2014clique,
+  title={Genetic Algorithm for the Maximum Clique Problem},
+  author={Shah, Shalin},
+  year={2014}
+}
+</pre>
 <pre>The code needs a data.CLQ file in the current directory. One is included. 
 Compile the code using g++ and then just run it. 
 You can change the file name in the processData() function.</pre>
