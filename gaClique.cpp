@@ -27,7 +27,7 @@ int NUMBER_NODES;     // populated automatically by processData
 int NUMBER_EDGES;		 // populated automatically by processData
 const int POPULATION = 10; // size of the population
 const int LOCAL_IMPROVEMENT = 10; // number of local improvements
-const int GENERATIONS = 100; // number of generations to run the algorithm
+int GENERATIONS = 100; // number of generations to run the algorithm
 const int MUTATIONS = 10; 	// How many vertices to remove randomly in the mutate() function
 const int UNIQUE_ITERATIONS = 100;	// Used by localImprovement() to prevent a stall for very small cliques
 const int SHUFFLE_TOLERANCE = 500; // Generate a fresh population after a stall
@@ -135,7 +135,7 @@ class Graph
          delete [] aMatrix;
 
          // no need to delete the contents of sortedNodes as they have already been deleted
-         // by the above loop 
+         // by the above loop
       }
 
    	void addEdge(int sv, int ev)
@@ -200,7 +200,7 @@ class Clique
       {
       	clique.reserve(NUMBER_NODES);
          pa.reserve(NUMBER_NODES);
-         
+
   			clique.push_back(firstVertex);
          mapClique.insert(map<int, bool, less<int> >::value_type(firstVertex, true));
 
@@ -335,7 +335,7 @@ class Clique
             	break;
             }
          }
-         
+
 			if(flag)
          	clique.erase(it);
       }
@@ -352,8 +352,8 @@ class Clique
 
          if(p.second)
          	return true;
-	
-	return false;	
+
+	return false;
 	}
 
       vector<SortedListNode> computeSortedList()
@@ -368,7 +368,7 @@ class Clique
             {
             	if(i == j)
                	continue;
-               
+
             	int node2 = pa.at(j);
                if(GRAPH->aMatrix[node1][node2] == 1)
                {
@@ -460,19 +460,19 @@ double generateDoubleRandomNumber()
 }
 
 /* Process the data from the data.CLQ file */
-void processData()
+void processData(char * filename)
 {
 	FILE * file;
-	file = fopen("data.CLQ", "r");
+	file = fopen(filename, "r");
    if(file == NULL)
    {
-   	printf("data.CLQ File Not Found in Current Directory.");
+   		printf("File Not Found in Current Directory.");
       exit(1);
    }
 
 	char * line = new char [1000];
 	fgets(line, 1000, file);
-   while(line[0] == 'c')
+   while(line[0] == 'c' || strlen(line) <= 1)
    {
    	fgets(line, 1000, file);
    }
@@ -581,7 +581,7 @@ vector<Clique> generateRandomPopulation()
    population.push_back(clique);
 
    delete [] flags;
-   
+
    return population;
 }
 
@@ -870,10 +870,18 @@ inline void mutate(Clique &clique)
 }
 
 /* Main */
-int main (void)
+int main(int argc, char * argv[])
 {
 	srand(time(NULL));
-   processData();
+	if(argc < 3)
+	{
+			printf("\nUsage: ./a.out filename iterations\n\n");
+			exit(0);
+	}
+
+	processData(argv[1]);
+	GENERATIONS = atoi(argv[2]);
+
    GRAPH->sortList();
    vector<Clique> population;
    population.reserve(POPULATION);
@@ -918,7 +926,7 @@ int main (void)
       {
       	gBest = localBest.clone();
       }
-      
+
       localImprovement(gBest);
       newPopulation.push_back(gBest);
       printf("\n%d:%lu",n, gBest.clique.size());
@@ -927,7 +935,7 @@ int main (void)
       	printf("%d ", population.at(i).clique.size());
       }
       getch();*/
-      
+
       for(int i=0; i<POPULATION-1; i++)
       {
          vector<Clique> parents = randomSelection(population);
@@ -949,7 +957,7 @@ int main (void)
    {
    	printf("%d ", gBest.clique.at(i)+1);
    }
-
+	 printf("\n\n");
    delete GRAPH;
 	return 0;
 }
