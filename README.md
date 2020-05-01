@@ -14,10 +14,15 @@
   author={Shah, Shalin},
   year={2014}
 }
+</pre><br>
+<b>Usage:</b>
+<pre>
+- Compile the code using g++
+- e.g. <b>g++ gaClique.cpp</b>
+- Run <b>./a.out filename generations</b>
+- e.g. <b>./a.out instances/C500.9.CLQ 100</b>
+- Typical value for generations is 100
 </pre>
-<pre>The code needs a data.CLQ file in the current directory. One is included. 
-Compile the code using g++ and then just run it. 
-You can change the file name in the processData() function.</pre>
 
 <i>(If you are looking for a simpler algorithm in Java, please see <a href="https://github.com/shah314/clique2">clique2</a>)</i>
 
