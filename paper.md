@@ -24,9 +24,12 @@ bibliography: paper.bib
 # Abstract
 A clique in a graph is a set of vertices that are all connected to each other. A maximum clique is a clique of maximum size. A graph may have more than one maximum cliques. The problem of finding a maximum clique is a strongly hard NP-hard problem. It is not possible to find an approximation algorithm which finds a maximum clique that is a constant factor of the optimum solution. In this work, we present a genetic algorithm for the maximum clique problem that is able to find optimum or close to optimum solutions to most DIMACS graphs. The genetic algorithm uses new crossover mechanisms which are able to find reasonably good cliques which can then be used in other applications downstream. We also provide C++ code for our algorithm. Results show that our algorithm is able to find maximum cliques for most DIMACS instances, and if not, close to optimum solutions for the other instances.
 
-Keywords:maximum clique, randomized algorithm, genetic algorithm, approximation algorithm, k-opt moves, local search, open source, C++, intersection crossover
+Keywords: maximum clique, randomized algorithm, genetic algorithm, approximation algorithm, k-opt moves, local search, open source, C++, intersection crossover
 
 # Introduction
+
+The method uses the following steps:
+
 
 # Results
 
@@ -44,9 +47,6 @@ Keywords:maximum clique, randomized algorithm, genetic algorithm, approximation 
 |p_hat300-1|300|70551|8|8|0
 |san200_0.7_1|200|13930|30|30|0
 |san1000|1000|250500|15|10|1
-
-The method uses the following steps:
-
 
 The problem instances are available here:
 <http://iridia.ulb.ac.be/~fmascia/maximum_clique/DIMACS-benchmark>.
