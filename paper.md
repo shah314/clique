@@ -22,7 +22,7 @@ bibliography: paper.bib
 ||||
 |--- |--- |--- |--- |--- |--- |
 |DataSet|Vertices|Edges|Best Known|This Algorithm|Duration (Seconds)
-|--- |--- |--- |
+|--- |--- |--- |--- |--- |--- |
 |brock200_1|200|14834|21|21|9
 |C125.9|125|6963|34|34|0
 |c-fat200-1|200|1534|12|12|0
