@@ -9,12 +9,13 @@ tags:
   - approximation algorithm
   - open source
 authors:
-  - name: Shalin Shah
-    orcid: 0000-0002-3770-1391
-    affiliation: 1
+    - name: Shalin Shah
+      orcid: 0000-0002-3770-1391
+      affiliation: 1
 affiliations:
-  - name: Johns Hopkins University
-    index: 1
+   - name: Johns Hopkins University
+     index: 1
+date: 9 May 2020
 bibliography: paper.bib
 
 ![Clique.](clique.jpg)
