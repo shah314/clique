@@ -19,8 +19,6 @@ bibliography: paper.bib
 
 ![Clique.](clique.jpg)
 
-||||
-|--- |--- |--- |--- |--- |--- |
 |DataSet|Vertices|Edges|Best Known|This Algorithm|Duration (Seconds)
 |--- |--- |--- |--- |--- |--- |
 |brock200_1|200|14834|21|21|9
