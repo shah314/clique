@@ -10,7 +10,7 @@
 <b>Cite this code:</b>
 <pre>
 @misc{shah2014gclique,
-  title={GCLIQUE: A Genetic Algorithm for the Maximum Clique Problem in Java},
+  title={GCLIQUE: A Genetic Algorithm for the Maximum Clique Problem in C++},
   author={Shah, Shalin},
   year={2014}
 }
