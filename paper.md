@@ -17,6 +17,7 @@ affiliations:
      index: 1
 date: 9 May 2020
 bibliography: paper.bib
+---
 
 ![Clique.](clique.jpg)
 
