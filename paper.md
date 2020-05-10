@@ -38,7 +38,7 @@ For the entire population, the algorithm performs the intersection crossover and
 
 # Results
 
-In most of the DIMACS instances, the algorithm is able to find the optimum maximum clique (except the san1000 instance). The results are shown in the following table. If a faster and simple solution in Java is desired, the work in [@shah2016clique2] could be useful. The git repository can be found at [@shah2016clique].
+In most of the DIMACS instances, the algorithm is able to find the optimum or close to optimum clique (except the san1000 instance). The results are shown in the following table. The git repository can be found at [@shah2016clique].
 
 |DataSet|Vertices|Edges|Best Known|This Algorithm|Duration (Seconds)
 |--- |--- |--- |--- |--- |--- |
@@ -55,7 +55,8 @@ In most of the DIMACS instances, the algorithm is able to find the optimum maxim
 |san200_0.7_1|200|13930|30|30|0
 |san1000|1000|250500|15|10|1
 
-The DIMACS problem instances are available here:
-<http://iridia.ulb.ac.be/~fmascia/maximum_clique/DIMACS-benchmark>.
+The DIMACS problem instances are available at [@dimacsinstances].
+
+If a faster and simple solution in Java is desired, the work in [@shah2016clique2] could be useful. 
 
 # References
