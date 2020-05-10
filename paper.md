@@ -26,12 +26,19 @@ A clique in a graph is a set of vertices that are all connected to each other. A
 
 Keywords: maximum clique, randomized algorithm, genetic algorithm, approximation algorithm, k-opt moves, local search, open source, C++, intersection crossover
 
-# Introduction
+# Methods
 
-The method uses the following steps:
+This work implements a genetic algorithm for the maximum clique problem. The maximum clique problem has been well studied in the past. [@pardalos1994maximum] and [@bomze1999maximum] are surveys on the problem which describe the various algorithms and provable approximations on the problem. This work [@OSTERGARD2002197] presents a fast algorithm for the maximum clique problem. A survey on maximum clique algorithms can be found in [@WU2015693].
 
+This genetic algorithm uses new types of crossover mechanisms to find reasonably good solutions. The intersection crossover that generates a new offspring based on an intersection of the nodes in the two parents is inspired by [@dharwadker2006clique].
+
+The genetic algorithm uses a population of individuals (solutions) and performs crossover and mutation on them. It initializes the population using random solutions. If in consecutive 10 generations, there is no improvement, it does a random restart of the population. In each generation, the algorithm keeps a cache of the global best solution, and propagates the global best individual to the next generation.
+
+For the entire population, the algorithm performs the intersection crossover and mutation. After each step, it performs 2-opt local improvement. Mutation happens only if the fitness (clique size) of the offspring is less than or equal to at least one of the parent solutions.
 
 # Results
+
+In most of the DIMACS instances, the algorithm is able to find the optimum maximum clique (except the sam1000 instance). The results are shown in the following table. If a faster and simple solution in Java is desired, the work in [@shah2016clique2] could be useful.
 
 |DataSet|Vertices|Edges|Best Known|This Algorithm|Duration (Seconds)
 |--- |--- |--- |--- |--- |--- |
@@ -48,7 +55,7 @@ The method uses the following steps:
 |san200_0.7_1|200|13930|30|30|0
 |san1000|1000|250500|15|10|1
 
-The problem instances are available here:
+The DIMACS problem instances are available here:
 <http://iridia.ulb.ac.be/~fmascia/maximum_clique/DIMACS-benchmark>.
 
 # References
