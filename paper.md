@@ -38,7 +38,7 @@ For the entire population, the algorithm performs the intersection crossover and
 
 # Results
 
-In most of the DIMACS instances, the algorithm is able to find the optimum maximum clique (except the sam1000 instance). The results are shown in the following table. If a faster and simple solution in Java is desired, the work in [@shah2016clique2] could be useful.
+In most of the DIMACS instances, the algorithm is able to find the optimum maximum clique (except the san1000 instance). The results are shown in the following table. If a faster and simple solution in Java is desired, the work in [@shah2016clique2] could be useful.
 
 |DataSet|Vertices|Edges|Best Known|This Algorithm|Duration (Seconds)
 |--- |--- |--- |--- |--- |--- |
