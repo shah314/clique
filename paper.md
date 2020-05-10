@@ -30,7 +30,7 @@ Keywords: maximum clique, randomized algorithm, genetic algorithm, approximation
 
 This work implements a genetic algorithm for the maximum clique problem. The maximum clique problem has been well studied in the past. [@pardalos1994maximum] and [@bomze1999maximum] are surveys on the problem which describe the various algorithms and provable approximations on the problem. This work [@OSTERGARD2002197] presents a fast algorithm for the maximum clique problem. A survey on maximum clique algorithms can be found in [@WU2015693].
 
-This genetic algorithm uses new types of crossover mechanisms to find reasonably good solutions. The intersection crossover that generates a new offspring based on an intersection of the nodes in the two parents is inspired by [@dharwadker2006clique].
+This genetic algorithm uses new types of crossover mechanisms to find reasonably good solutions. The intersection crossover that generates a new offspring based on an intersection of the two clique solutions in the two parents is inspired by [@dharwadker2006clique].
 
 The genetic algorithm uses a population of individuals (solutions) and performs crossover and mutation on them. It initializes the population using random solutions. If in consecutive 10 generations, there is no improvement, it does a random restart of the population. In each generation, the algorithm keeps a cache of the global best solution, and propagates the global best individual to the next generation.
 
