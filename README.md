@@ -12,7 +12,7 @@
 @misc{shah2014gclique,
   title={GCLIQUE: A Genetic Algorithm for the Maximum Clique Problem in C++},
   author={Shah, Shalin},
-  year={2014}
+  year={2020}
 }
 </pre><br>
 <b>Usage:</b>
