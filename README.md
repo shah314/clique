@@ -1,4 +1,4 @@
-<h1>Genetic Algorithm for the Maximum Clique Problem</h1>
+<h1>GCLIQUE: An Open Source Genetic Algorithm for the Maximum Clique Problem</h1>
 
 <i><h3>Shalin Shah</h3></i>
 <a href="https://zenodo.org/badge/latestdoi/134309139"><img src="https://zenodo.org/badge/134309139.svg" alt="DOI"></a>
