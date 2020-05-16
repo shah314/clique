@@ -9,7 +9,7 @@
 <br>
 <b>Cite this code:</b>
 <pre>
-@misc{shah2014gclique,
+@misc{shah2020gclique,
   title={GCLIQUE: An Open Source Genetic Algorithm for the Maximum Clique Problem},
   author={Shah, Shalin},
   year={2020},
