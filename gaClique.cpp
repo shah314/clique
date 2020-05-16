@@ -17,10 +17,9 @@ For an explanation of the code see http://shah.freeshell.org/clique/.
 #include <vector>
 #include <algorithm>
 #include <time.h>
-//#include <stdlib.h>
-//#include <conio.h>
 #include <map>
-
+#include <ctime>
+#include <string.h>
 using namespace std;
 
 int NUMBER_NODES;     // populated automatically by processData
