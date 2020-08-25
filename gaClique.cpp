@@ -27,7 +27,7 @@ int NUMBER_EDGES;		 // populated automatically by processData
 const int POPULATION = 10; // size of the population
 const int LOCAL_IMPROVEMENT = 10; // number of local improvements
 int GENERATIONS = 10000; // number of generations to run the algorithm
-const int MUTATIONS = 10; 	// How many vertices to remove randomly in the mutate() function
+const int MUTATIONS = 1; 	// How many vertices to remove randomly in the mutate() function
 const int UNIQUE_ITERATIONS = 100;	// Used by localImprovement() to prevent a stall for very small cliques
 const int SHUFFLE_TOLERANCE = 10; // Generate a fresh population after a stall
 
